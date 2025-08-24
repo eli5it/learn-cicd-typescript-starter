@@ -26,7 +26,7 @@ describe("getApiKey", () => {
         authorization: "ApiKey key"
     }
     const res = getAPIKey(headers)
-    expect(res).toBe("key2")
+    expect(res).toBe("key")
   })
 });
 
