@@ -1,4 +1,6 @@
 # learn-cicd-typescript-starter (Notely)
+
+
 ![ci progress](https://github.com/eli5it/learn-cicd-typescript-starter/actions/workflows/ci.yml/badge.svg)
 
 
