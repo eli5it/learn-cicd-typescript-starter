@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import path from "path";
+import process from "process";
 import { config } from "./config.js";
 import { db } from "./db/index.js";
 import { middlewareAuth } from "./api/middleware.js";
@@ -9,6 +10,11 @@ import { handlerNotesCreate, handlerNotesGet } from "./api/notes.js";
 import { handlerUsersCreate, handlerUsersGet } from "./api/users.js";
 
 const __dirname = path.resolve();
+
+function unused() {
+  // this function does nothing
+  // and is called nowhere
+}
 
 if (!config.api.port) {
   console.error("PORT environment variable is not set");
